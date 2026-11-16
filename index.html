@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#172033">
+<title>Мой режим сна — 21 день</title>
+<style>
+:root{--bg:#f3f5f9;--card:#fff;--ink:#182235;--muted:#667085;--accent:#4058a8;--line:#e5e9f0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:900px;margin:auto;padding:22px 15px 50px}h1{font-size:clamp(27px,5vw,38px);line-height:1.15;margin:0 0 8px}h2{font-size:21px;margin:0 0 12px}
+p{margin:7px 0}.muted,.small{color:var(--muted)}.small{font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:18px;margin:14px 0;box-shadow:0 3px 14px #18223508}
+.hero{background:#172033;color:white;border:0}.hero .muted{color:#c5ccda}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px 8px;text-align:left;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:600}
+.progress{height:10px;background:#e8ebf2;border-radius:20px;overflow:hidden;margin:10px 0}.bar{height:100%;width:0;background:var(--accent);transition:width .2s}
+.day{border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0;background:white}
+.dayhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.dayhead strong{font-size:17px}
+.tasks{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px;margin-top:12px}
+.task{display:flex;align-items:flex-start;gap:9px;padding:9px 10px;border-radius:10px;background:#f7f8fb;font-size:14px}
+.task input{width:18px;height:18px;margin:1px 0 0;accent-color:var(--accent);flex-shrink:0}
+button{border:0;border-radius:10px;padding:10px 14px;background:var(--accent);color:white;font-weight:600;font-size:14px;cursor:pointer}
+button.secondary{background:#e9edf7;color:#24345f}button.danger{background:#fbeaea;color:#9c2929}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.note{background:#f5f7fc;border-left:3px solid var(--accent);padding:11px 13px;border-radius:8px}
+@media(max-width:520px){main{padding:16px 11px 35px}.card{padding:15px}.tasks{grid-template-columns:1fr}th,td{padding:8px 5px}}
+</style>
+</head>
+<body>
+<main>
+<section class="card hero">
+  <h1>Режим сна · 21 день</h1>
+  <p class="muted">Постепенно сдвигаем сон раньше, учитывая, что сейчас обычное засыпание около 03:30 и в ноябре мало дневного света.</p>
+  <p><strong>Главный принцип:</strong> регулярность важнее идеального выполнения. Если этап даётся тяжело — задержись на нём, а не сокращай сон.</p>
+</section>
+
+<section class="card">
+  <h2>План на 21 день</h2>
+  <table>
+    <thead><tr><th>Дни</th><th>Подъём</th><th>Целевое засыпание</th></tr></thead>
+    <tbody>
+      <tr><td>1–3</td><td>11:30</td><td>03:15</td></tr>
+      <tr><td>4–6</td><td>11:15</td><td>03:00</td></tr>
+      <tr><td>7–9</td><td>11:00</td><td>02:45</td></tr>
+      <tr><td>10–12</td><td>10:45</td><td>02:30</td></tr>
+      <tr><td>13–15</td><td>10:30</td><td>02:15</td></tr>
+      <tr><td>16–18</td><td>10:15</td><td>02:00</td></tr>
+      <tr><td>19–21</td><td>10:00</td><td>01:45</td></tr>
+    </tbody>
+  </table>
+  <p class="small">Целевое засыпание — ориентир, а не обязанность уснуть точно в эту минуту. Начинай спокойный вечерний ритуал за 45–60 минут. Подросткам обычно нужно 8–10 часов сна: если график не даёт тебе выспаться, не переходи к следующему этапу, пока не скорректируешь его.</p>
+</section>
+
+<section class="grid">
+  <div class="card">
+    <h2>Вечерний ритуал</h2>
+    <ul>
+      <li>Оставь 45–60 минут на отдых после дел.</li>
+      <li>За час до целевого засыпания закончи бесконечный скроллинг и новые длинные видео.</li>
+      <li>Приглуши свет, подготовь вещи на завтра.</li>
+      <li>Гигиена, спокойная музыка или чтение.</li>
+      <li>Не используй кровать для долгого просмотра контента.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Утренний ритуал</h2>
+    <ul>
+      <li>Поставь будильник подальше от кровати.</li>
+      <li>Сразу включи яркое освещение и открой шторы.</li>
+      <li>Умойся, выпей воды, позавтракай.</li>
+      <li>В первой половине дня выйди на улицу, даже если пасмурно.</li>
+      <li>Не возвращайся в кровать после подъёма.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Особенно важно в ноябре</h2>
+  <p>Когда утром темно, не жди солнечного света, чтобы начать день: включай яркий свет дома сразу после подъёма. По возможности проведи 20–30 минут на улице в первой половине дня — даже облачный дневной свет полезен для настройки режима.</p>
+  <p>Вечером, наоборот, постепенно уменьшай яркость освещения. Световой будильник может быть дополнительным помощником, но не заменяет достаточный сон.</p>
+  <div class="note"><strong>Не форсируй график.</strong> Если ты не высыпаешься или не можешь уснуть в новое время, задержись на текущем этапе на несколько дней.</div>
+</section>
+
+<section class="card">
+  <h2>Трекер привычек</h2>
+  <p class="muted">Отмечай то, что получилось. Не нужно добиваться 100% — возвращайся к плану на следующий день.</p>
+  <div class="progress"><div class="bar" id="overallBar"></div></div>
+  <p id="overallText" class="small">Выполнено 0 из 147 отметок</p>
+  <div id="days"></div>
+  <div class="actions">
+    <button class="secondary" id="exportBtn">Экспортировать прогресс</button>
+    <button class="secondary" id="importBtn">Импортировать прогресс</button>
+    <button class="danger" id="resetBtn">Сбросить весь трекер</button>
+    <input type="file" id="importFile" accept="application/json" hidden>
+  </div>
+  <p class="small">Отметки сохраняются в памяти этого браузера на устройстве. Для переноса на другой телефон используй экспорт и импорт.</p>
+</section>
+</main>
+<script>
+const tasks = [
+  "Лёг спать в запланированное время",
+  "Не смотрел контент в кровати",
+  "Проснулся по будильнику",
+  "Не вернулся в кровать",
+  "Включил яркий свет сразу после пробуждения",
+  "Получил дневной свет в первой половине дня",
+  "Начал день без долгого лежания в кровати"
+];
+const schedule = [
+  ["11:30","03:15"],["11:30","03:15"],["11:30","03:15"],
+  ["11:15","03:00"],["11:15","03:00"],["11:15","03:00"],
+  ["11:00","02:45"],["11:00","02:45"],["11:00","02:45"],
+  ["10:45","02:30"],["10:45","02:30"],["10:45","02:30"],
+  ["10:30","02:15"],["10:30","02:15"],["10:30","02:15"],
+  ["10:15","02:00"],["10:15","02:00"],["10:15","02:00"],
+  ["10:00","01:45"],["10:00","01:45"],["10:00","01:45"]
+];
+const KEY="sleep_tracker_21d_v2";
+let data={};
+try{data=JSON.parse(localStorage.getItem(KEY)||"{}");}catch(e){data={};}
+function save(){localStorage.setItem(KEY,JSON.stringify(data));}
+function render(){
+  const root=document.getElementById("days");root.innerHTML="";
+  let total=0,done=0;
+  for(let d=1;d<=21;d++){
+    const checks=data[d]||Array(tasks.length).fill(false);
+    const section=document.createElement("section");section.className="day";
+    const count=checks.filter(Boolean).length;total+=tasks.length;done+=count;
+    const head=document.createElement("div");head.className="dayhead";
+    head.innerHTML=`<strong>День ${d}</strong><span class="small">Подъём ${schedule[d-1][0]} · засыпание ${schedule[d-1][1]} · ${count}/${tasks.length}</span>`;
+    section.appendChild(head);
+    const bar=document.createElement("div");bar.className="progress";
+    const fill=document.createElement("div");fill.className="bar";fill.style.width=(count/tasks.length*100)+"%";bar.appendChild(fill);section.appendChild(bar);
+    const list=document.createElement("div");list.className="tasks";
+    tasks.forEach((task,i)=>{
+      const label=document.createElement("label");label.className="task";
+      const input=document.createElement("input");input.type="checkbox";input.checked=!!checks[i];
+      input.addEventListener("change",()=>{const current=data[d]||Array(tasks.length).fill(false);current[i]=input.checked;data[d]=current;save();render();});
+      const span=document.createElement("span");span.textContent=task;
+      label.append(input,span);list.appendChild(label);
+    });
+    section.appendChild(list);root.appendChild(section);
+  }
+  document.getElementById("overallBar").style.width=(done/total*100)+"%";
+  document.getElementById("overallText").textContent=`Выполнено ${done} из ${total} отметок (${Math.round(done/total*100)}%)`;
+}
+document.getElementById("resetBtn").addEventListener("click",()=>{
+  if(confirm("Удалить все отметки за 21 день?")){data={};save();render();}
+});
+document.getElementById("exportBtn").addEventListener("click",()=>{
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+  const url=URL.createObjectURL(blob);const a=document.createElement("a");
+  a.href=url;a.download="sleep-tracker-progress.json";a.click();URL.revokeObjectURL(url);
+});
+document.getElementById("importBtn").addEventListener("click",()=>document.getElementById("importFile").click());
+document.getElementById("importFile").addEventListener("change",async e=>{
+  const file=e.target.files[0];if(!file)return;
+  try{
+    const imported=JSON.parse(await file.text());
+    if(!imported||typeof imported!=="object"||Array.isArray(imported))throw new Error();
+    data={};
+    for(let d=1;d<=21;d++){
+      const row=imported[d];
+      if(Array.isArray(row))data[d]=tasks.map((_,i)=>!!row[i]);
+    }
+    save();render();alert("Прогресс импортирован.");
+  }catch(err){alert("Не удалось прочитать файл прогресса.");}
+  e.target.value="";
+});
+render();
+</script>
+</body>
+</html>
